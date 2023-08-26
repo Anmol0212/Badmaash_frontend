@@ -1,0 +1,9 @@
+<div class="header">
+    <div class="slide" [ngClass]="{ 'show': currentSlide === 1, 'slide-enter':currentSlide === 1 ,'slide-exit': currentSlide === 2 }">Hello</div>
+    <div class="slide" [ngClass]="{ 'show': currentSlide === 2, 'slide-enter':currentSlide === 2 ,'slide-exit': currentSlide === 1 }">World</div>
+    
+  </div>
+
+
+  <app-nav-bar></app-nav-bar>
+  

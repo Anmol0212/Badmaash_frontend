@@ -1,0 +1,52 @@
+
+<div class="line"></div>
+<div class="container">
+  <div class="left-division">
+    <!-- Left Content Goes Here -->
+ 
+
+    <h4><B>Price</B></h4>
+    <mat-radio-group [(ngModel)]="selectedOption" class="vertical-radio-group" (ngModelChange)="logSelectedOption()">
+      <mat-radio-button value="option1">Rs. 500 - RS. 999</mat-radio-button>
+      <mat-radio-button value="option2">Rs. 1000 - RS. 1499</mat-radio-button>
+      <mat-radio-button value="option3">Rs. 1500 - RS. 1999</mat-radio-button>
+      <mat-radio-button value="option4">Rs. 2000 +</mat-radio-button>
+      <!-- <mat-radio-button value="shirts">PANTS</mat-radio-button>
+      <mat-radio-button value="option3"></mat-radio-button>
+      <mat-radio-button value="option4"></mat-radio-button>
+      <mat-radio-button value="option4" disabled>Checked switch checkbox input (disabled)</mat-radio-button>
+      <mat-radio-button value="option4" disabled>Checked switch checkbox input (disabled)</mat-radio-button> -->
+    </mat-radio-group>
+    
+</div>
+<div class="right-division">
+  <!-- Right Content Goes Here -->
+<div class="card-container">
+    <!-- <div class="product-card" *ngFor="let cObj of cusList"> -->
+      <div class="product-card" *ngFor="let cObj of productList">
+       
+      <div class="product-tumb">
+        <img [src]="cObj.imageLink" alt="">
+      </div>
+      <div class="product-details">
+        
+        <h4><a href="">{{cObj.productType}}</a></h4>
+        <p>{{cObj.productName}}</p>
+        <div class="product-bottom-details">
+          <div class="product-price"><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;{{cObj.productCost}}</div>
+          <div class="product-links">
+             </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+<!-- 
+  
+ -->

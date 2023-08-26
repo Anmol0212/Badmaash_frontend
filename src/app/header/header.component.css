@@ -1,0 +1,73 @@
+.header {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 254, 254);
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    position: relative;
+    height: 10px; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+  .logo {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 10px;
+  }
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    animation-fill-mode: both;
+  }
+  
+  .slide.show {
+    opacity: 1;
+    z-index: 2;
+  }
+  
+  @keyframes slideEnterAnimation {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    5% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideExitAnimation {
+    0% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    5% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  
+  .slide-enter {
+    animation-name: slideEnterAnimation;
+    animation-duration: 4s; /* Adjust the duration as needed */
+    animation-timing-function: ease-in-out;
+  }
+  
+  .slide-exit {
+    animation-name: slideExitAnimation;
+    animation-duration: 3s; /* Adjust the duration as needed */
+    animation-timing-function: ease-in-out;
+  }
+  

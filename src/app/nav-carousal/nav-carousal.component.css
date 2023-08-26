@@ -1,0 +1,74 @@
+.image-container {
+    position: relative;
+  }
+  
+  .background-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem; /* Adjust the margin as needed */
+  }
+  
+  .overlay-image {
+    position: absolute;
+    bottom: 0.5rem; /* Adjust the position from the bottom as needed */
+    display: inline-block;
+  }
+  
+  /* .overlay-image:hover {
+    transform: scale(1.1); /* Apply a scale transformation on hover */
+ 
+  
+  
+  .overlay-left {
+    left: 0.5rem; /* Adjust the position from the left as needed */
+    height: 45%;
+    width: 50%;
+    padding-right: 10px;
+  }
+  
+  .overlay-right {
+    right: 0.5rem; /* Adjust the position from the right as needed */
+    height: 45%;
+    width: 50%;
+    padding-left: 10px;
+  }
+  
+  .overlay-image img {
+    width: 100%; /* Adjust the width as needed */
+    height: auto;
+    filter: none;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    bottom: 0.5rem; /* Adjust the position from the bottom as needed */
+    left: 0; /* Align the text to the left */
+    padding-bottom: 10%;
+    
+    margin-left: 10%;
+    color: white; /* Adjust the text color as needed */
+    font-size: 20px; /* Adjust the font size as needed */
+    font-weight: bold; /* Adjust the font weight as needed */
+    font-family: Ysabeau SC;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adjust the text shadow as needed */
+     /* Initially set the opacity to 0 */
+     /* opacity: 0.4; Initially set the opacity to 0 */
+     opacity: 0;
+     transition: opacity 0.3s ease-in-out, font-size 0.3s ease-in-out;
+     
+    
+    
+  }
+
+  .overlay-image:hover .overlay-text {
+    opacity: 1; /* Change the opacity to 1 on hover */
+  font-size: 24px; /* Adjust the increased font size as needed */
+  transform: scale(1.2);
+  }
+
+  
+  .overlay-image:hover img {
+    filter: blur(1px);
+    transform: scale(1.009); /* Remove the blur effect on hover */
+  }

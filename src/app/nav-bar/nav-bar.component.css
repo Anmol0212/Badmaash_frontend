@@ -1,0 +1,92 @@
+.navbar {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  
+  .nav-item {
+    display: inline-block;
+    margin: 0 10px;
+    color: black;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Ysabeau SC;
+  }
+
+ 
+  
+  .logo-item {
+    margin-left: 20px;
+    margin-right: 90px;
+  }
+  
+  .icon-space {
+    margin-left: 160px;
+  }
+  
+
+  .nav-item.dropdown {
+    position: relative;
+    
+  }
+
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: none;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    padding: 5px;
+    margin: 0;
+    
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+    animation: dropdown-animation 0.3s ease-in-out;
+    font-size: 12px;
+    
+  }
+  
+  @keyframes dropdown-animation {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .nav-item i.fa-heart {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav-item i.fa-heart:hover {
+    animation: jump-animation 2s linear infinite;
+  }
+  
+  @keyframes jump-animation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

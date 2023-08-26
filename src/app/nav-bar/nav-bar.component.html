@@ -1,0 +1,45 @@
+
+<nav class="navbar">
+    <ul class="nav-list">
+      <!-- <li class="nav-item"><img src="https://www.badmaash.com/cdn/shop/files/Badmaash_Logo_Details-1_1_1_1_d41e0537-7483-47a5-bd4b-0ef75dba30af_140x.png?v=1670569637" alt="Logo" class="logo"></li> -->
+      <li class="nav-item logo-item">
+        <img src="../../assets/BADMAASH_LOGO_2.png" alt="Logo" class="logo" style="height: 5vh ;width : 10vw">
+      </li>
+      <li class="nav-item">NEW ARRIVALS</li>
+      
+    <li class="nav-item dropdown">
+      SHIRT    <i class="fa-sharp fa-solid fa-caret-down fa-beat fa-sm" style="color: #000000;"></i>
+      <ul class="dropdown-menu">
+<li class="dropdown-item" routerLink="/product" (click)="sendData('shirts')" >Shirt1</li>
+        <li class="dropdown-item">Shirt 2</li>
+        <li class="dropdown-item">Shirt 3</li>
+        <!-- Add more shirt items as needed -->
+      </ul>
+    </li>
+    <li class="nav-item dropdown">
+      BOTTOM WEAR  <i class="fa-sharp fa-solid fa-caret-down fa-beat fa-sm" style="color: #000000;"></i>
+      <ul class="dropdown-menu">
+        <li class="dropdown-item">Bottom Wear 1</li>
+        <li class="dropdown-item">Bottom Wear 2</li>
+        <li class="dropdown-item">Bottom Wear 3</li>
+        <!-- Add more bottom wear items as needed -->
+      </ul>
+    </li>
+      <li class="nav-item" routerLink="/product">CO-ORDS</li>
+      <li class="nav-item"  routerLink="/product" (click)="sendData('Tshirts')">T-SHIRTS</li>
+      <li class="nav-item"  routerLink="/product" (click)="sendData('Cl')">BEST SELLER</li>
+      <li class="nav-item"  routerLink="product" (click)="sendData('shirts')">TRACK ORDER</li>
+      <li class="nav-item" routerLink="/product" (click)="sendData('Cl')">RETURNS/EXCHANGE</li>
+      <li class="nav-item icon-space"><i class="fa-solid fa-magnifying-glass"></i></li>
+      <li class="nav-item "><i class="fa-solid fa-user"></i></li>
+      <li class="nav-item "><i class="fa-regular fa-heart"></i></li>
+      <li class="nav-item "><i class="fa-solid fa-bag-shopping"></i></li>
+    </ul>
+  </nav>
+  
+
+  <app-nav-carousal></app-nav-carousal>
+
+
+ 
+  

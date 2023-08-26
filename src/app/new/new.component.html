@@ -1,0 +1,63 @@
+
+<div class="trending-line">
+  <span class="trending-text">Trending</span>
+</div>
+
+<div class="card-container">
+  
+    <!-- <div class="product-card" *ngFor="let cObj of cusList"> -->
+      <div class="product-card" *ngFor="let cObj of productList">
+       
+      <div class="product-tumb"> 
+        <img [src]="cObj.imageLink" alt="">
+      </div>
+      <div class="product-details">
+        
+        <h4><a href="">{{cObj.productType}}</a></h4>
+        <p>{{cObj.productName}}</p>
+        <div class="product-bottom-details">
+          <div class="product-price"><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;{{cObj.productCost}}</div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="full-width-image-container">
+    <img src="../../assets/denims.PNG" alt="Full Width Image" class="full-width-image">
+    <div class="hover-button">Shop Denim Collections</div>
+    
+  </div>
+
+  <div class="horizontal-line"></div>
+  <div class="trending-line">
+    <span class="trending-text">DENIM JEANS</span>
+  </div>
+  <div class="card-container">
+  
+    <!-- <div class="product-card" *ngFor="let cObj of cusList"> -->
+      <div class="product-card" *ngFor="let cObj of productList1">
+       
+      <div class="product-tumb"> 
+        <img [src]="cObj.imageLink" alt="">
+      </div>
+      <div class="product-details">
+        
+        <h4><a href="">{{cObj.productType}}</a></h4>
+        <p>{{cObj.productName}}</p>
+        <div class="product-bottom-details">
+          <div class="product-price"><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;{{cObj.productCost}}</div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="full-width-image-container">
+    <img src="../../assets/foot.PNG" alt="Full Width Image" class="full-width-image">
+  </div>
